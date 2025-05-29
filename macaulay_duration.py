@@ -13,7 +13,7 @@ def macaulay_duration(coupon_rate, face_value, ytm, n):
     duration = weighted_sum / PV_total
     return round(duration, 4), round(PV_total, 2)
 
-# Input Parameters
+# Input
 face_value = 1000
 coupon_rate = 0.058
 n_years = 3
@@ -24,6 +24,6 @@ duration_58, price_58 = macaulay_duration(coupon_rate, face_value, 0.058, n_year
 # Case 2: YTM = 8%
 duration_80, price_80 = macaulay_duration(coupon_rate, face_value, 0.08, n_years)
 
-# Output the results
+# Output
 print("=== Macaulay Duration and Price Comparison ===")
 print(f"YTM 5.8% -> Duration: {duration_58} years | Price: ${price_58}")
